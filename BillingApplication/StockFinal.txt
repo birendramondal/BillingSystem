@@ -1,0 +1,1 @@
+CREATE TABLE "StockFinal" ("Serial_No" INTEGER,"Quantity" TEXT,"Vendor_Name" TEXT,"Purchase_Rate" TEXT,"Total_Ammount" TEXT,"GST" TEXT,"Materials" TEXT PRIMARY KEY ,"Selling_Price" TEXT)

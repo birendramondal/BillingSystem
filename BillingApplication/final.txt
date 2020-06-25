@@ -1,0 +1,2 @@
+1>CREATE TABLE "Admin" ("username" TEXT PRIMARY KEY  NOT NULL , "password" TEXT)
+2>CREATE TABLE "Admin" ("username" TEXT PRIMARY KEY  NOT NULL , "password" TEXT)

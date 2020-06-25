@@ -1,0 +1,12 @@
+1>CREATE TABLE "CancelBill" ("Products" TEXT, "Quantity" TEXT, "Rate" TEXT, "GST" TEXT, "CustomerID" TEXT, "Ammount" TEXT, "SGST" TEXT, "CGST" TEXT, "Payment" TEXT, "Total" TEXT)
+2>CREATE TABLE "CustomerFinal" ("CNamw" TEXT DEFAULT (Not null) ,"CAddress" TEXT,"PhNo" INTEGER DEFAULT (Not null) ,"PayType" TEXT,"CustomerID" TEXT PRIMARY KEY ,"SlNo" INTEGER,"EmailID" TEXT,"Time" TEXT,"Date" TEXT,"PanNo" TEXT,"GSTNo" TEXT,"AdharNo" TEXT,"Credit" TEXT,"TotalAmt" TEXT,"chequenumber" TEXT,"Identifier" TEXT,"Payment" TEXT, "Due" TEXT)
+/////////////CustomerID and DueID =0///////////
+
+
+3>CREATE TABLE "Temp" ("Products" TEXT, "Quantity" TEXT, "Rate" TEXT, "GST" TEXT, "CustomerID" TEXT, "Ammount" TEXT, "SGST" TEXT, "CGST" TEXT, "Payment" TEXT, "Total" TEXT)
+4>CREATE TABLE "Temp2" ("Products" TEXT,"Quantity" TEXT DEFAULT (null) ,"Rate" TEXT DEFAULT (null) ,"GST" TEXT DEFAULT (null) ,"CustomerID" TEXT,"Ammount" TEXT, "SGST" TEXT, "CGST" TEXT, "Total" TEXT)
+5>CREATE TABLE "VenInvo" ("Serial_No" INTEGER, "Vendor_Name" TEXT, "Date" TEXT)
+6>CREATE TABLE "Vendor" ("PhoneNo" INTEGER,"GSTNo" INTEGER,"AdharNo" INTEGER,"Address" TEXT,"PayType" TEXT,"ChqNo" TEXT,"Total" INTEGER,"Date" TEXT,"Time" TEXT,"Credit" INTEGER, "VName" TEXT, "Details" TEXT, "Serial No" INTEGER, PRIMARY KEY (VName))
+7>CREATE TABLE "creditCustomers" ("Name" TEXT, "Identifier" TEXT, "Credit" TEXT, "Payment" TEXT, "CustomerID" TEXT)
+8>CREATE TABLE "venpro" ("Products" TEXT,"Quantity" TEXT,"Rate" INTEGER,"GST" INTEGER,"VendorName" TEXT,"PayType" TEXT,"ChequeNo" TEXT,"Details" TEXT,"Credit" TEXT,"DownPay" TEXT,"Serial_No" INTEGER DEFAULT (null) ,"time" TEXT,"date" TEXT)
+9>CREATE TABLE "venproFinal" ("Products" TEXT,"Quantity" TEXT,"Rate" INTEGER,"GST" INTEGER,"VendorName" TEXT,"PayType" TEXT,"ChequeNo" TEXT,"Details" TEXT,"Credit" TEXT,"DownPay" TEXT,"Serial_No" INTEGER DEFAULT (null) , "time" TEXT, "date" TEXT)
